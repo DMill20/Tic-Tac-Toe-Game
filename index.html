@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TTT</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="animate__animated animate__heartBeat">Tic Tac Toe</h1>
+    </header>
+    <section>
+      <div id="gameBoard" class="animate__animated animate__heartBeat">
+        <div id="square1" onclick="square1move()"></div>
+        <div id="square2" onclick="square2move()"></div>
+        <div id="square3" onclick="square3move()"></div>
+        <div id="square4" onclick="square4move()"></div>
+        <div id="square5" onclick="square5move()"></div>
+        <div id="square6" onclick="square6move()"></div>
+        <div id="square7" onclick="square7move()"></div>
+        <div id="square8" onclick="square8move()"></div>
+        <div id="square9" onclick="square9move()"></div>
+      </div>
+      <div>
+        <button onclick="reset()">Restart</button>
+      </div>
+      <div class="winning-message" id="winningMessage">
+        <div data-winnning-message-text></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
